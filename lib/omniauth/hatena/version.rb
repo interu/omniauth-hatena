@@ -1,4 +1,4 @@
-module Omniauth
+module OmniAuth
   module Hatena
     VERSION = "0.0.1"
   end
