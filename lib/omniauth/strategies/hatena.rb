@@ -46,13 +46,13 @@ module OmniAuth
       option :uid_field, :nickname
 
       # uid { access_token.params[:url_name]}
-      uid { user_hash[:url_name] }
+      uid { user_hash['url_name'] }
 
       info do
         { 
-          :name     => user_hash[:display_name],
-          :nickname => user_hash[:url_name],
-          :image    => user_hash[:profile_image_url],
+          :name     => user_hash['display_name'],
+          :nickname => user_hash['url_name'],
+          :image    => user_hash['profile_image_url'],
           :urls     => { 'Hatena' => 'http://www.hatena.ne.jp/' + user_hash['url_name'] }
         }
       end
